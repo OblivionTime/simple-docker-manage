@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "node index.js"
+    "serve": "node index.js",
+    "build": "nexe index.js -t windows-x64-14.15.3 -o ./dist/release/dockerManage.exe  -r ui/  --icon logo.ico --rc logo.rc ",
+    "build:win": "nexe index.js -t windows-x64-14.15.3 -o ./dist/release/dockerManage.exe  -r ui/ --icon logo.ico --rc logo.rc",
+    "build:mac": "nexe index.js -t mac-x64-14.15.3 -o ./dist/release/dockerManage.exe   -r ui/",
+    "build:linux": "nexe  index.js -t linux-x64-14.15.3 -o ./dist/release/dockerManage -r ui/ "
   },
   "author": "",
   "license": "ISC",
@@ -14,8 +18,12 @@
     "express-routemap": "^1.6.0",
     "express-ws": "^5.0.2",
     "jsonwebtoken": "^9.0.0",
+    "nexe": "^4.0.0-rc.2",
     "node-pty": "^0.10.1",
     "pkg": "^5.8.0",
     "ws": "^8.13.0"
+  },
+  "nexe": {
+    "icon": "logo.ico"
   }
 }

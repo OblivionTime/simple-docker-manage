@@ -17,7 +17,10 @@
 git clone https://github.com/OblivionTime/simple-docker-manage.git
 cd simple-docker-manage/server
 yarn
+#调试
 node index.js
+#打包
+yarn build
 
 ```
 浏览器输入`http://127.0.0.1:7888/#/index`进入网站
