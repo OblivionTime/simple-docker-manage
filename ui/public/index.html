@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= webpackConfig.name %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= webpackConfig.name %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+  
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+  
+      ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        opacity: 0.2;
+        background: fade(rgba(0, 0, 0, 0.4), 60%);
+      }
+  
+      ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 0;
+        background: fade(rgba(0, 0, 0, 0.4), 30%);
+      }
+    </style>
+  </body>
+</html>
